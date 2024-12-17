@@ -1,0 +1,102 @@
+/* Body Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #6e8efb, #a777e3); /* Vibrant gradient */
+}
+
+/* Login Container */
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+/* Header Section */
+.login-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.login-header p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #6e8efb;
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #6e8efb, #a777e3);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.login-container {
+  animation: fadeIn 0.6s ease-in-out;
+}
